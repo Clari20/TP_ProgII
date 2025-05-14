@@ -14,6 +14,7 @@ public class ProductoDAOImpl implements ProductoDAO {
         int generatedId = -1;
 
         try {
+
             conn = DatabaseUtil.getConnection();
             String sql = "INSERT INTO productos (nombre, descripcion, precio, stock) VALUES (?, ?, ?, ?)";
             stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);

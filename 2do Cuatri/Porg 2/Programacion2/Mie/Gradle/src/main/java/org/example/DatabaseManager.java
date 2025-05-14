@@ -52,7 +52,6 @@ public class DatabaseManager {
             pstmt.executeUpdate();
             System.out.println("Persona insertada correctamente: " + persona.getNombre());
         } catch (SQLException e) {
-
             System.out.println("No se pudo insertar la persona a la tabla");
             e.printStackTrace();
         }

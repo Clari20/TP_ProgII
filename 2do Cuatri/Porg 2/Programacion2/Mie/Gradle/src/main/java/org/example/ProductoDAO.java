@@ -16,3 +16,4 @@ public interface ProductoDAO {
     // Delete
     boolean eliminar(int id);
 }
+

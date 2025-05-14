@@ -12,6 +12,7 @@ public class Producto {
     public Producto() {
     }
 
+
     // Constructor sin ID (para nuevos productos)
     public Producto(String nombre, String descripcion, double precio, int stock) {
         this.nombre = nombre;

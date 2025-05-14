@@ -62,6 +62,7 @@ public class Main2 {
         todosLosProductos = productoDAO.listarTodos();
         for (Producto p : todosLosProductos) {
             System.out.println(p);
+
         }
 
         String sql = "SELECT * FROM productos";

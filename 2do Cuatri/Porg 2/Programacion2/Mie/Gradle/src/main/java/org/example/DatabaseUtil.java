@@ -47,6 +47,7 @@ public class DatabaseUtil {
                     "precio DECIMAL(10,2) NOT NULL, " +
                     "stock INT DEFAULT 0)";
 
+
             stmt.execute(sql);
             System.out.println("Base de datos inicializada correctamente");
 
