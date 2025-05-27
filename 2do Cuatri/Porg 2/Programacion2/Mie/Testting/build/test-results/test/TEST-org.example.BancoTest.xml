@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.BancoTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-05-27T15:59:25" hostname="ASPIRE5" time="0.147">
+  <properties/>
+  <testcase name="testDepositarMontoNegativoLanzaExcepcion()" classname="org.example.BancoTest" time="0.038"/>
+  <testcase name="testConsultarSaldoCuentaExistente()" classname="org.example.BancoTest" time="0.005"/>
+  <testcase name="testRetiroMontoNegativoLanzaExcepcion()" classname="org.example.BancoTest" time="0.013"/>
+  <testcase name="testDepositarEnCuentaExistente()" classname="org.example.BancoTest" time="0.006"/>
+  <testcase name="testRetiroSaldoInsuficienteLanzaExcepcion()" classname="org.example.BancoTest" time="0.003"/>
+  <testcase name="testRetirarDeCuentaExistente()" classname="org.example.BancoTest" time="0.004"/>
+  <testcase name="testAgregarCuentaConSaldoInicial()" classname="org.example.BancoTest" time="0.001"/>
+  <testcase name="testDepositarEnCuentaInexistenteLanzaExcepcion()" classname="org.example.BancoTest" time="0.01"/>
+  <testcase name="testRetiroEnCuentaInexistenteLanzaExcepcion()" classname="org.example.BancoTest" time="0.008"/>
+  <testcase name="testConsultarSaldoCuentaInexistenteLanzaExcepcion()" classname="org.example.BancoTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
