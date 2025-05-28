@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    // Base de datos H2
+    implementation 'com.h2database:h2:2.1.214'
+    implementation 'com.h2database:h2:2.2.224'
+
+
+    // Log4j para logging
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-api:2.20.0'
+
+    // Para pruebas unitarias (opcional)
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    mainClass = 'com.biblioteca.main.BibliotecaApp'
+}
+
+// Configuración para ejecutar con gradle run
+run {
+    standardInput = System.in
+}
+
+// Tarea para crear un JAR ejecutable
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.biblioteca.main.BibliotecaApp'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
